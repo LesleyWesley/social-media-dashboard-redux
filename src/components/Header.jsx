@@ -8,12 +8,12 @@ function Header() {
           <h2>Total Followers: 23,004</h2>
       </div>
 
-      <div className="header--dark-mode-section">
+      <div className="dark-mode-section">
           <h2>Dark Mode</h2>
-          <div className="dark-mode-toggle-container">
+          <div className="toggle-container">
               <input type="checkbox" className="toggle-checkbox" />
-              <div className="toggle-bg">
-                  <div className="toggle-ball"></div>
+              <div className="slider--container">
+                  <div className="slider--ball"></div>
               </div>
           </div>
       </div>

@@ -1,1 +1,131 @@
+:root {
 
+  /*Light Mode Colors */
+  --card-bg-clr: #f0f2fa;
+  --text-clr: #63687e;
+  --dark-text-clr: #1e202a;
+  --toggle-bg-clr: #aeb3cb;
+
+  /*Dark Mode Colors */
+
+  --dark-mode-bg-clr: #1e202a;
+  --dark-mode-card-bg-clr: #252a41;
+  --dark-mode-text-clr: #8b97c6;
+  --white-clr: #ffffff;
+
+
+  --positive-text-clr: #1db489;
+  --negative-text-clr: #dc414c;
+
+  --facebook-clr: #198ff5;
+  --twitter-clr: #1ca0f2;
+  --instagram-clr: linear-gradient(90deg, #fdc468, #df4996);
+  --youtube-clr: #c4032a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: .875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: var(--text-clr);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.body-bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+}
+
+/* Header Styling */
+
+header {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+h1 {
+  color: var(--dark-text-clr);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.total-followers {
+  font-weight: bold;
+}
+
+/*Dark Mode Section Styling */
+
+.dark-mode-section {
+  margin-top: 1.5rem;
+  padding-top: .75rem;
+  border-top: 1px solid var(--dark-text-clr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: .875rem;
+  color: var(--toggle-bg-clr);
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  width: 2.75rem;
+  aspect-ratio: 1;
+  z-index: 2;
+  position: absolute;
+  opacity: 0;
+}
+
+
+.slider--container {
+  background: var(--toggle-bg-clr);
+  width: 2.9rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  padding: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+}
+
+.slider--ball {
+  background: white;
+  width: 1.125rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+/*Dark Mode for Header and Dark Mode Section */

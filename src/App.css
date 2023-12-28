@@ -1,18 +1,8 @@
 :root {
-
-  /*Light Mode Colors */
   --card-bg-clr: #f0f2fa;
   --text-clr: #63687e;
   --dark-text-clr: #1e202a;
   --toggle-bg-clr: #aeb3cb;
-
-  /*Dark Mode Colors */
-
-  --dark-mode-bg-clr: #1e202a;
-  --dark-mode-card-bg-clr: #252a41;
-  --dark-mode-text-clr: #8b97c6;
-  --white-clr: #ffffff;
-
 
   --positive-text-clr: #1db489;
   --negative-text-clr: #dc414c;
@@ -64,7 +54,7 @@ body {
 
 header {
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 h1 {
@@ -128,4 +118,184 @@ input {
   border-radius: 50%;
 }
 
-/*Dark Mode for Header and Dark Mode Section */
+/*Big Card Component Styling */
+
+.big-card-section,
+.little-card-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card,
+.little-card {
+  width: 100%;
+  max-width: 325px;
+  background-color: var(--card-bg-clr);
+  border-radius: 6px;
+}
+
+.card {
+  padding-top: 5px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.card-container {
+    background-color: var(--card-bg-clr);
+    padding: .75rem 0;
+}
+
+.big-card--heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-card--icon {
+  margin-right: .5rem;
+}
+
+.handle {
+  font-size: .875rem;
+}
+
+.followers-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: .75rem;
+}
+
+.followers-amount {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--dark-text-clr);
+}
+
+.followers-heading {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+
+.increase-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--positive-text-clr);
+  font-weight: bold;
+}
+
+.increase-amount {
+  margin: 0 5px;
+}
+
+/*Little Card Component Styling */
+
+.little-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.little-card--headings-div,
+.little-card--stats-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.little-card--stats-div {
+  align-items: flex-end;
+}
+
+.little-card--title {
+  margin: 0;
+}
+
+.little-card--main-stat {
+  font-weight: 700;
+  font-size: 2.125rem;
+  color: var(--dark-text-clr);
+}
+
+.little-card--percentage-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  color: var(--positive-text-clr);
+}
+
+/*Little Card Section Component Styling */
+
+.little-card-section {
+  width: 100%;
+}
+
+.little-card-section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.little-card-section--title {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
+  color: var(--text-clr);
+}
+
+/*Media Queries */
+
+@media (min-width: 700px) {
+
+  body {
+    font-size: 1rem;
+    height: 100vh;
+    width: 100vw;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .dark-mode-section {
+    border-top: none;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .big-card-section,
+  .little-card-section-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  .card,
+  .little-card {
+    max-width: 275px;
+  }
+
+}

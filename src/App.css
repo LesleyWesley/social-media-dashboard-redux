@@ -1,4 +1,5 @@
 :root {
+  --light-top-bg-pattern-clr: #f5f7ff;
   --card-bg-clr: #f0f2fa;
   --text-clr: #63687e;
   --dark-text-clr: #1e202a;
@@ -11,6 +12,10 @@
   --twitter-clr: #1ca0f2;
   --instagram-clr: linear-gradient(90deg, #fdc468, #df4996);
   --youtube-clr: #c4032a;
+
+  /*Dark Mode Colors*/
+
+  --body-bg-clr: #1e202a;
 }
 
 * {
@@ -25,6 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   color: var(--text-clr);
 }
 
@@ -37,9 +43,20 @@ body {
 
 .body-bg {
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.top-design {
+  background-color: var(--light-top-bg-pattern-clr);
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  border-radius: 0 0 1rem 1rem;
 }
 
 .container {
@@ -48,6 +65,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 85%;
+  z-index: 1;
 }
 
 /* Header Styling */
@@ -264,9 +282,13 @@ input {
 
   body {
     font-size: 1rem;
-    height: 100vh;
     width: 100vw;
   }
+
+.top-design {
+  height: 200px;
+}
+
   header {
     display: flex;
     justify-content: space-between;

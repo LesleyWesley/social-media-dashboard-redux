@@ -15,7 +15,13 @@
 
   /*Dark Mode Colors*/
 
-  --body-bg-clr: #1e202a;
+  --dark-body-bg-clr: #1e202a;
+  --dark-top-bg-pattern-clr: #1f212e;
+  --white-clr: #FFF;
+  --dark-card-bg-clr: #252a41;
+  --dark-dark-text-clr: #8b97c6;
+  --dark-toggle-left-clr: #378fe6;
+  --dark-toggle-right-clr: 	#3eda82;
 }
 
 * {

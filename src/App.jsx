@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from "react"
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -7,11 +7,18 @@ import BigCardSection from "./components/BigCardSection.jsx"
 import LittleCardSection from "./components/LittleCardSection.jsx"
 
 function App() {
+
+  const [darkMode, setDarkMode] = React.useState(true)
+
+  function toggle() {
+    setDarkMode(prevMode => !prevMode)
+  }
+
   return (
-    <div className="body-bg darkmode">
-      <div className="top-design darkmode"></div>
+    <div className={darkMode ? "body-bg darkmode" : "body-bg"}>
+      <div className="top-design"></div>
       <div className="container">
-        <Header />
+        <Header darkMode={darkMode} handleChange={toggle}/>
         <BigCardSection />
         <LittleCardSection />
       </div>

@@ -69,7 +69,7 @@ body {
   border-radius: 0 0 1rem 1rem;
 }
 
-.top-design.darkmode {
+.body-bg.darkmode .top-design {
   background-color: var(--dark-top-bg-pattern-clr);
 }
 

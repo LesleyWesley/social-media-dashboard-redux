@@ -2,7 +2,7 @@ import React from "react"
 
 function Header() {
   return (
-    <header>
+    <header className="darkmode">
       <div className="header--details-section">
           <h1>Social Media Dashboard</h1>
           <h2>Total Followers: 23,004</h2>

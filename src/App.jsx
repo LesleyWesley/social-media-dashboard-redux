@@ -8,8 +8,8 @@ import LittleCardSection from "./components/LittleCardSection.jsx"
 
 function App() {
   return (
-    <div className="body-bg">
-      <div className="top-design"></div>
+    <div className="body-bg darkmode">
+      <div className="top-design darkmode"></div>
       <div className="container">
         <Header />
         <BigCardSection />

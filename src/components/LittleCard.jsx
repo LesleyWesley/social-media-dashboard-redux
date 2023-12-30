@@ -11,7 +11,7 @@ function LittleCard(props) {
   }
 
   return (
-    <div className="little-card">
+    <div className="little-card darkmode">
         <div className="little-card--headings-div">
             <h4 className="little-card--title">{props.card.stat}</h4>
             <img src={props.card.icon} alt={props.card.platform} className="little-card--icon"/>

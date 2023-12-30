@@ -17,7 +17,7 @@ function LittleCardSection () {
 
   return (
     <div className="little-card-section">
-      <h2 className="little-card-section--title">Overview - Today</h2>
+      <h2 className="little-card-section--title darkmode">Overview - Today</h2>
       <div className="little-card-section-container">
         {littleCardElements}
       </div>

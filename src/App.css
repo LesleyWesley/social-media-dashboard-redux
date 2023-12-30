@@ -55,6 +55,10 @@ body {
   align-items: center;
 }
 
+.body-bg.darkmode {
+  background-color: var(--dark-body-bg-clr);
+}
+
 .top-design {
   background-color: var(--light-top-bg-pattern-clr);
   height: 250px;
@@ -63,6 +67,10 @@ body {
   z-index: 1;
   top: 0;
   border-radius: 0 0 1rem 1rem;
+}
+
+.top-design.darkmode {
+  background-color: var(--dark-top-bg-pattern-clr);
 }
 
 .container {
@@ -87,8 +95,16 @@ h1 {
   margin-bottom: 10px;
 }
 
+.darkmode h1 {
+  color: var(--white-clr);
+}
+
 .total-followers {
   font-weight: bold;
+}
+
+.darkmode h2 {
+  color: var(--dark-dark-text-clr);
 }
 
 /*Dark Mode Section Styling */
@@ -135,11 +151,20 @@ input {
   z-index: 1;
 }
 
+.darkmode .slider--container {
+  background: linear-gradient(90deg, var(--dark-toggle-left-clr), var(--dark-toggle-right-clr));
+  justify-content: flex-start;
+}
+
 .slider--ball {
   background: white;
   width: 1.125rem;
   aspect-ratio: 1;
   border-radius: 50%;
+}
+
+.darkmode .slider--ball {
+  background: var(--dark-body-bg-clr);
 }
 
 /*Big Card Component Styling */
@@ -231,6 +256,12 @@ input {
   margin-bottom: 1rem;
 }
 
+.card-container.darkmode,
+.little-card.darkmode {
+  background-color: var(--dark-card-bg-clr);
+  color: var(--dark-dark-text-clr);
+}
+
 .little-card--headings-div,
 .little-card--stats-div {
   display: flex;
@@ -238,6 +269,8 @@ input {
   align-items: center;
   width: 100%;
 }
+
+
 
 .little-card--stats-div {
   align-items: flex-end;
@@ -251,6 +284,11 @@ input {
   font-weight: 700;
   font-size: 2.125rem;
   color: var(--dark-text-clr);
+}
+
+.card-container.darkmode .followers-amount,
+.little-card.darkmode .little-card--main-stat {
+  color: white;
 }
 
 .little-card--percentage-div {
@@ -280,6 +318,10 @@ input {
   font-size: 1.5rem;
   text-align: left;
   color: var(--text-clr);
+}
+
+.little-card-section--title.darkmode {
+  color: var(--white-clr);
 }
 
 /*Media Queries */
@@ -326,4 +368,10 @@ input {
     max-width: 275px;
   }
 
+}
+
+@media (min-width: 1200px) {
+  .body-bg {
+    height: 100vh;
+  }
 }

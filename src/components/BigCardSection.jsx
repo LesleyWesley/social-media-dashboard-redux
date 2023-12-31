@@ -2,7 +2,7 @@ import React from "react"
 import BigCard from "./BigCard.jsx"
 import mainData from "../main-data.js"
 
-function BigCardSection() {
+function BigCardSection(props) {
   const cardElements = mainData.map(card => {
 
     const arrowType = card.increase ? "icon-up.svg" : "icon-down.svg"
@@ -11,6 +11,7 @@ function BigCardSection() {
       <BigCard
         key={card.platform}
         card={card}
+        darkMode={props.darkMode}
       />
     )
   })

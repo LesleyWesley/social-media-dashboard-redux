@@ -20,7 +20,7 @@ function BigCard(props) {
 
   return (
     <div className="card" style={backgroundStyles}>
-      <div className="card-container darkmode">
+      <div className={props.darkMode ? "card-container darkmode" : "card-container"}>
             <div className="big-card--heading">
                 <img src={props.card.icon} alt={props.card.platform} className="big-card--icon"/>
                 <h3 className="handle">{props.card.username}</h3>

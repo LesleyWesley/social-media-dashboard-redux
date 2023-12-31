@@ -19,8 +19,8 @@ function App() {
       <div className="top-design"></div>
       <div className="container">
         <Header darkMode={darkMode} handleChange={toggle}/>
-        <BigCardSection />
-        <LittleCardSection />
+        <BigCardSection darkMode={darkMode}/>
+        <LittleCardSection darkMode={darkMode}/>
       </div>
     </div>
   )

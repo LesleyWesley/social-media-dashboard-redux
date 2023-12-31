@@ -8,7 +8,7 @@ import LittleCardSection from "./components/LittleCardSection.jsx"
 
 function App() {
 
-  const [darkMode, setDarkMode] = React.useState(true)
+  const [darkMode, setDarkMode] = React.useState(false)
 
   function toggle() {
     setDarkMode(prevMode => !prevMode)

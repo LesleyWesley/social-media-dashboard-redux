@@ -130,6 +130,7 @@ h2 {
   position: relative;
 }
 
+
 input {
   width: 2.75rem;
   aspect-ratio: 1;
@@ -137,7 +138,6 @@ input {
   position: absolute;
   opacity: 0;
 }
-
 
 .slider--container {
   background: var(--toggle-bg-clr);
@@ -256,11 +256,24 @@ input {
   margin-bottom: 1rem;
 }
 
+.card-container:hover,
+.little-card:hover {
+  background-color: #E1E3F0;
+  cursor: pointer;
+}
+
 .card-container.darkmode,
 .little-card.darkmode {
   background-color: var(--dark-card-bg-clr);
   color: var(--dark-dark-text-clr);
 }
+
+.card-container.darkmode:hover,
+.little-card.darkmode:hover {
+  background-color: #333A56;
+  cursor: pointer;
+}
+
 
 .little-card--headings-div,
 .little-card--stats-div {

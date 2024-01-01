@@ -167,6 +167,18 @@ input {
   background: var(--dark-body-bg-clr);
 }
 
+input:hover {
+  cursor: pointer;
+}
+
+input:hover ~ .slider--container {
+  background: linear-gradient(90deg, var(--dark-toggle-left-clr), var(--dark-toggle-right-clr));;
+}
+
+input:hover ~ .darkmode .slider--container > .slider--ball {
+  background: #333A56;
+}
+
 /*Big Card Component Styling */
 
 .big-card-section,

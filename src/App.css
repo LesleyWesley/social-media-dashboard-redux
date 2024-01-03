@@ -175,7 +175,7 @@ input:hover ~ .slider--container {
   background: linear-gradient(90deg, var(--dark-toggle-left-clr), var(--dark-toggle-right-clr));;
 }
 
-input:hover ~ .darkmode .slider--container > .slider--ball {
+input:hover ~ .slider--container > .darkmode.slider--ball {
   background: #333A56;
 }
 

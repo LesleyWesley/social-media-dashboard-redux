@@ -14,7 +14,7 @@ function Header(props) {
               <input type="checkbox" className="toggle-checkbox" id="darkmode" checked={props.darkMode} onChange={props.handleChange}/>
               <label htmlfor="darkmode"></label>
               <div className="slider--container">
-                  <div className="slider--ball"></div>
+                  <div className={props.darkMode ? "darkmode slider--ball" : "slider--ball"}></div>
               </div>
           </div>
       </div>

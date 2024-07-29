@@ -356,6 +356,7 @@ input:hover ~ .slider--container > .darkmode.slider--ball {
   body {
     font-size: 1rem;
     width: 100vw;
+    padding: 2rem 0;
   }
 
 .top-design {

@@ -356,7 +356,7 @@ input:hover ~ .slider--container > .darkmode.slider--ball {
   body {
     font-size: 1rem;
     width: 100vw;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
   }
 
 .top-design {
@@ -368,7 +368,7 @@ input:hover ~ .slider--container > .darkmode.slider--ball {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   h1 {
